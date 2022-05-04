@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+
+/*  COLORES
+    
+    rgba(139, 129, 85,1) PRIMARIO
+    rgba(209, 240, 177,1) SECUNDARIO
+    rgba(47, 47, 47,1) HIHGLIGHTS
+
+*/
+
+li {
+    list-style: none;
+}
+
+.cajaView {
+    border: 5px solid black;
+}
+
+h5 {
+    color: white;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(139, 129, 85, 1);
+}
+
+h3 {
+    font-size: 50px;
+    color: rgba(139, 129, 85, 1);
+}
+
+h4 {
+    font-size: 35px;
+    color: rgba(139, 129, 85, 1);
+}
+
+p {
+    font-size: 30px;
+    text-align: justify;
+    font-weight: 450;
+    text-indent: 2rem;
+    }
+
+/*------------*/
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/imagenes/WaveLine.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300% 80%;
+    background-attachment: fixed;
+    background-blend-mode: color-dodge;
+}
+
+.encabezado {
+    background-color: rgba(139, 129, 85, 1);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.logo {
+    height: 85%;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(47, 47, 47, 1);
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
+
+.wallet {}
+
+.nav__item--close {
+    display: none;
+}
+
+.header__open {
+    text-decoration: none;
+    color: unset;
+    display: none;
+}
+
+.jam-menu {
+    font-size: 50px;
+    color: white;
+}
+
+/* BOTOM WALLET */
+.button-28 {
+    width: max-content;
+    appearance: none;
+    background-color: transparent;
+    border: 5px solid rgba(209, 240, 177, 1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: rgba(209, 240, 177, 1);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 900ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: rgba(47, 47, 47, 1);
+    background-color: rgba(209, 240, 177, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* /boton */
+
+.mainSection {
+    display: flex;
+    justify-content: center;
+}
+
+.mainGrid {
+    width: 100%;
+    display: grid;
+    /*background-color: black;*/
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+        "infoProducto__titulo infoProducto__titulo muestraNft"
+        "infoProducto__desc infoProducto__desc muestraNft"
+        "infoProducto__desc infoProducto__desc muestraNft"
+        "supply price muestraNft";
+
+
+}
+
+.infoProducto__titulo {
+    grid-area: infoProducto__titulo;
+    text-align: center;
+    te
+}
+
+.infoProducto__desc {
+    grid-area: infoProducto__desc;
+    padding: 1rem;
+    ;
+}
+
+.infoProducto {
+    grid-area: infoProducto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+    text-shadow: 3px 2px 2px rgba(209, 240, 177, 1);
+}
+
+.infoProducto h2 {
+    text-align: center;
+}
+
+.infoProducto p {
+    text-align: justify;
+}
+
+
+.muestraNft {
+    grid-area: muestraNft;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    /*border:solid 5px rgba(209, 240, 177,1);;*/
+}
+
+.muestraNft img {
+    width: 45%;
+    height: max-content;
+    border-radius: 5px;
+
+
+}
+
+.supply {
+    grid-area: supply;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(209, 240, 177, 1);
+}
+
+
+.price {
+    grid-area: price;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(209, 240, 177, 1);
+}
+
+.piepag {
+    background-color: rgb(139, 129, 85);
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: bottom;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.piepag redes{
+    display: flex;
+    justify-content: space-around;
+}
+.piepag img {
+    height: 100%;
+    w
+    padding: 1px;
+    
+}
+
+/*  TEAM    */
+.mainTeam {
+    display: grid;
+    width: 100%;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "integrante1 integrante2"
+        "integrante3 .";
+}
+
+.mainTeam__integrante1 {
+    grid-area: integrante1;
+}
+
+.mainTeam__integrante2 {
+    grid-area: integrante2;
+}
+
+.mainTeam__integrante3 {
+    grid-area: integrante3;
+}
+
+
+.teamProfile {
+    width: 580px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas:
+        ". role"
+        "desc PP"
+        "redes name";
+
+}
+
+.teamProfile__role {
+    grid-area: role;
+    justify-self: end;
+}
+
+.teamProfile__PP {
+    grid-area: PP;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+.teamProfile__name {
+    grid-area: name;
+    text-align: center;
+}
+
+.teamProfile__desc {
+    grid-area: desc;
+    padding: 1.5rem;
+}
+
+.teamProfile__redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.teamProfile__redes img {
+    height: 35px;
+    padding: 15px;
+    background-color: white;
+}
+
+/*  /TEAM    */
+
+@media screen and (max-width:1201px) {
+
+    .logo {
+        height: 85%;
+        border-radius: 10px;
+    }
+
+    p{
+        font-weight: unset;
+    }
+
+    .button-28 {
+        width: min-content;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .encabezado {
+        height: fit-content;
+    }
+
+    /*.nav {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 35%;
+    }*/
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 35%;
+    }
+
+    .nav li {
+        height: fit-content;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .nav a {
+        font-size: 30px;
+    }
+
+
+
+    .mainGrid {
+        position: relative;
+        display: grid;
+        width: 98vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, max-content);
+        grid-template-areas:
+            "infoProducto__titulo infoProducto__titulo"
+            "muestraNft muestraNft"
+            "supply price"
+            "infoProducto__desc infoProducto__desc"
+        ;
+    }
+
+    .infoProducto {
+        padding: 0;
+    }
+
+    .muestraNft {
+        gap: 5px;
+    }
+
+    .muestraNft img {
+        width: 35%;
+        height: fit-content;
+
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .infoProducto__desc {
+        font-size: 18px;
+        width: 85%;
+        justify-self: center;
+    }
+
+    .mainTeam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teamProfile {
+        width: 100%;
+        max-width: 975px;
+    }
+
+}
+
+/*tablet*/
+
+@media screen and (max-width:769px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .logo {
+        height: 85%;
+        border-radius: 10px;
+    }
+
+    .button-28 {
+        width: min-content;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .piepag {
+        height: max-content;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .piepag h5 {
+        text-align: center;
+    }
+
+    .piepag img {
+        width: 35px;
+        height: fit-content;
+    }
+
+    .piepag redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .jam-menu {
+        display: inline;
+        font-size: 50px;
+        color: white;
+    }
+
+    #lateral {
+        display: block;
+        text-align: center;
+        background-color: rgba(139, 129, 85, 0.8);
+        width: fit-content;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right ease-in-out 1s;
+    }
+
+    #lateral:target {
+        right: 0;
+    }
+
+    .nav {
+        display: flex;
+        padding: 1rem;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+    }
+
+    .nav li {
+        height: 50px;
+        /*border: 2px black solid;*/
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav a {
+        font-size: 30px;
+    }
+
+    .header__open {
+        display: inline;
+    }
+
+    .jam-close {
+        font-size: 45px;
+    }
+
+    .mainGrid {
+        position: relative;
+        display: grid;
+        width: 98vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, max-content);
+        grid-template-areas:
+            "infoProducto__titulo infoProducto__titulo"
+            "muestraNft muestraNft"
+            "supply price"
+            "infoProducto__desc infoProducto__desc"
+        ;
+    }
+
+    .infoProducto {
+        padding: 0;
+    }
+
+    .muestraNft {
+        gap: 5px;
+    }
+
+    .muestraNft img {
+        width: 49%;
+        height: fit-content;
+
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .infoProducto__desc {
+        font-size: 18px;
+    }
+
+    .teamProfile {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .teamProfile__desc {
+        display: none;
+          }
+
+}
+
+/*movil chico*/
