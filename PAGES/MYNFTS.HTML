@@ -2,80 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAGINA MINT-STANDAR - Inicio</title>
-    <link rel="stylesheet" href="/STYLES/Styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAGINA MINT-STANDAR - Inicio</title>
+  <link rel="stylesheet" href="/STYLES/Styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
 
 
 <body class="cuerpo">
-    <header class="encabezado">
-        <img class="logo" src="/imagenes/Logo_placeholder.jpg" alt="logo" />
-        <ul class="nav" id="lateral">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="GUIDE.HTML">GUIDE</a></li>
-            <li><a href="MYNFTS.HTML">MY NFTs</a></li>
-            <li><a href="TEAM.HTML">TEAM</a></li>
-            <li><a href="FAQ.HTML">FAQ</a></li>
-            <li class="nav__item--close">
-                <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
-            </li>
-        </ul>
-        <a href="https://metamask.io/" class="wallet">
-            <button class="button-28" role="button">CONNECT WALLET</button>
-        </a>
+  <header class="encabezado">
+    <img class="logo" src="/imagenes/Logo_placeholder.jpg" alt="logo" />
+    <ul class="nav" id="lateral">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="GUIDE.HTML">GUIDE</a></li>
+      <li><a href="MYNFTS.HTML">MY NFTs</a></li>
+      <li><a href="TEAM.HTML">TEAM</a></li>
 
-        <a href="#lateral" class="header__open">
-            <span class="jam jam-menu" data-jam="menu" data-fill="#222"></span>
-        </a>
+      <li class="nav__item--close">
+        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
+      </li>
+    </ul>
+    <a href="https://metamask.io/" class="wallet">
+      <button class="button-28" role="button">0x21..6584</button>
+    </a>
+
+    <a href="#lateral" class="header__open">
+      <span class="jam jam-menu" data-jam="menu" data-fill="#222"></span>
+    </a>
 
 
-    </header>
-  <body>
-    <h2>NOMBRE DE COLECCION</h2>
-    <div>
-      <Button>Ordenar por rareza</Button>
+  </header>
+  <h2 class="infoProducto__titulo">NOMBRE DE COLECCION</h2>
+  <main class="mainGrid_myNfts">
+
+    <rareza class="rareza">
+      <wrap class="wrapper">
+        <a class="button--ordenar" href="#">ORDENAR POR RAREZA</a>
+      </wrap>
+
+      <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+      <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+
+    </rareza>
+    <div class="NFT--1">
+      <img src="https://picsum.photos/200/300?random=1" alt="NFT SAMPLE" />
+      <h4>TOKEN ID 552</h4>
     </div>
-    <br />
-    <table>
-      <tr>
-        <td>
-          <img src="https://picsum.photos/200/300?random=1" alt="NFT SAMPLE" />
-          <h4>TOKEN ID 552</h4>
-        </td>
-        <td>
-          <img src="https://picsum.photos/200/300?random=2" alt="NFT SAMPLE" />
-          <h4>TOKEN ID 052</h4>
-        </td>
-        <td>
-          <img src="https://picsum.photos/200/300?random=3" alt="NFT SAMPLE" />
-          <h4>TOKEN ID 420</h4>
-        </td>
-      </tr>
-      <tr>
+    <div class="NFT--2">
+      <img src="https://picsum.photos/200/300?random=2" alt="NFT SAMPLE" />
+      <h4>TOKEN ID 052</h4>
+    </div>
+    <div class="NFT--3">
+      <img src="https://picsum.photos/200/300?random=3" alt="NFT SAMPLE" />
+      <h4>TOKEN ID 420</h4>
+    </div>
+    <div class="NFT--4">
+      <img src="https://picsum.photos/200/300?random=4" alt="NFT SAMPLE" />
+      <h4>TOKEN ID 001</h4>
+    </div>
+    <div class="NFT--5">
+      <img src="https://picsum.photos/200/300?random=5" alt="NFT SAMPLE" />
+      <h4>TOKEN ID 652</h4>
+    </div>
 
-        <td>
-          <img src="https://picsum.photos/200/300?random=4" alt="NFT SAMPLE" />
-          <h4>TOKEN ID 001</h4>
-        </td>
-      </tr>
-    </table>
-  </body>
+    <div class="NFT--6">
+      <img src="https://picsum.photos/200/300?random=6" alt="NFT SAMPLE" />
+      <h4>TOKEN ID 452</h4>
+    </div>
+
+  </main>
   <footer class="piepag">
     <h5>© Todos los derechos reservados</h5>
     <redes>
-        <a href="https://twitter.com">
-            <img src="/imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
-            <a href=https://discord.com/">
-                <img src="/imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
-            </a>
-            <a href="https://https://nftkey.app/">
-                <img src="/imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
-            </a>
+      <a href="https://twitter.com">
+        <img src="/imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
+        <a href=https://discord.com/">
+          <img src="/imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
+        </a>
+        <a href="https://https://nftkey.app/">
+          <img src="/imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
+        </a>
     </redes>
-</footer>
+  </footer>
 
 </html>

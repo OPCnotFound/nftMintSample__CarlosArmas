@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGINA MINT-STANDAR - Inicio</title>
+    <link rel="stylesheet" href="/STYLES/Styles.css" />
+    <link rel="stylesheet" href="/STYLES/MINTBUTTOM.CCS" />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+</head>
+
+<body class="cuerpo">
+    <header class="encabezado">
+        <img class="logo" src="/imagenes/Logo_placeholder.jpg" alt="logo" />
+        <ul class="nav" id="lateral">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="GUIDE.HTML">GUIDE</a></li>
+            <li><a href="MYNFTS.HTML">MY NFTs</a></li>
+            <li><a href="TEAM.HTML">TEAM</a></li>
+            <li class="nav__item--close">
+                <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
+            </li>
+        </ul>
+        <a href="https://metamask.io/" class="wallet">
+            <button class="button-28" role="button">0x21..6584</button>
+        </a>
+
+        <a href="#lateral" class="header__open">
+            <span class="jam jam-menu" data-jam="menu" data-fill="#222"></span>
+        </a>
+
+
+    </header>
+    <main class="mainSection">
+        <section class="mainGrid--connected">
+            <h2 class="infoProducto__titulo">NOMBRE DE COLECCION</h2>
+            <p class="infoProducto__desc--connected">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit dolorem
+                in veritatis pariatur nulla itaque, minima excepturi, veniam vero
+                beatae enim natus recusandae reiciendis. Doloribus eum laboriosam
+                mollitia natus. Iste! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Maxime alias minima autem incidunt itaque! Dolores
+                eos sunt quis in et, esse dolorem, quas nulla, voluptatem quae iste
+                enim nesciunt illum.
+            </p>
+            <supply class="supply-connected">
+                <h3>1000 Name</h3>
+                <h4>SUPPLY</h4>
+            </supply>
+            <price class="price">
+                <h3>10 FTM</h3>
+                <h4>MINT PRICE</h4>
+            </price>
+            <muestra class="muestraNft">
+                <img src="https://picsum.photos/300/300?random=1" alt="NFT SAMPLE" />
+                <img src="https://picsum.photos/300/300?random=2" alt="NFT SAMPLE" />
+                <img src="https://picsum.photos/300/300?random=3" alt="NFT SAMPLE" />
+                <img src="https://picsum.photos/300/300?random=4" alt="NFT SAMPLE" />
+            </muestra>
+            <BARRA>
+                <div class="progress">
+                    <div class="progress-value"></div>
+
+                </div>
+                <h4> 880 minted out of 1000</h4>
+            </BARRA>
+            <mint>
+                <div class="wrapper">
+                    <a class="button" href="#">MINT</a>
+                </div>
+
+                <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                <svg style="visibility: hidden; position: absolute;" width="0" height="0"
+                    xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                        </filter>
+                    </defs>
+                </svg>
+
+            </mint>
+        </section>
+    </main>
+</body>
+<footer class="piepag">
+    <h5>© Todos los derechos reservados</h5>
+    <redes>
+        <a href="https://twitter.com">
+            <img src="/imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
+            <a href=https://discord.com/">
+                <img src="/imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
+            </a>
+            <a href="https://https://nftkey.app/">
+                <img src="/imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
+            </a>
+    </redes>
+</footer>
+
+</html>

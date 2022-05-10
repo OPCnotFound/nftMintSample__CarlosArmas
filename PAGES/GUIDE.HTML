@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAGINA MINT-STANDAR - Inicio</title>
-    <link rel="stylesheet" href="/STYLES/Styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAGINA MINT-STANDAR - Inicio</title>
+  <link rel="stylesheet" href="/STYLES/Styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
 
 
@@ -15,68 +15,86 @@
   <header class="encabezado">
     <img class="logo" src="/imagenes/Logo_placeholder.jpg" alt="logo" />
     <ul class="nav" id="lateral">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="GUIDE.HTML">GUIDE</a></li>
-        <li><a href="MYNFTS.HTML">MY NFTs</a></li>
-        <li><a href="TEAM.HTML">TEAM</a></li>
-        <li><a href="FAQ.HTML">FAQ</a></li>
-        <li class="nav__item--close">
-            <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
-        </li>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="GUIDE.HTML">GUIDE</a></li>
+      <li><a href="MYNFTS.HTML">MY NFTs</a></li>
+      <li><a href="TEAM.HTML">TEAM</a></li>
+      
+      <li class="nav__item--close">
+        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
+      </li>
     </ul>
     <a href="https://metamask.io/" class="wallet">
-        <button class="button-28" role="button">CONNECT WALLET</button>
+      <button class="button-28" role="button">CONNECT WALLET</button>
     </a>
 
     <a href="#lateral" class="header__open">
-        <span class="jam jam-menu" data-jam="menu" data-fill="#222"></span>
+      <span class="jam jam-menu" data-jam="menu" data-fill="#222"></span>
     </a>
 
 
-</header>
-  <main>
-    <section class="indexSection--GUIDE">
+  </header>
+  <main class="guideMain">
+    <h2 class="infoProducto__titulo">NOMBRE DE COLECCION</h2>
+    <section class="guideMain_section">
       <h3>INSTALLING A BROWSER WALLET</h3>
-      <Ol>
-        <LI> Install <a href="https://metamask.io/">MetaMask</a>, a broswer plugin that is a cryptowallet that holds
-          your funds and allows you to authenticate with any crypto web service.</LI>
-        <LI> Follow the steps to create your MetaMask account, if this is yout first time ever doing cryptostuff we
-          recommend you later invest time in understading what is a wallet and how to properly secure it.</LI>
-        <LI> <a href="https://docs.fantom.foundation/tutorials/set-up-metamask">Add Fantom Opera network</a> to your
-          metamask and switch to it</LI>
-        <LI> Once your metamask is up withdrawl your exchange FTMs into your MetaMask wallet. To do that click on your
-          FTM balance, click withdraw, choose the Fantom Opera (FTM) network and input your metamask wallet address. You
-          are now good to go and use any service in the Fantom Opera network with your metamask!</LI>
-      </Ol>
-   
-    <DIv>
+      <p class="guideMain_section--texto"> Install <a href="https://metamask.io/">MetaMask</a>, a broswer plugin that is
+        a cryptowallet that holds your
+        funds and allows you to authenticate with any crypto web service.
+        Follow the steps to create your MetaMask account, if this is yout first time ever doing cryptostuff we
+        recommend you later invest time in understading what is a wallet and how to properly secure it.
+        <a href="https://docs.fantom.foundation/tutorials/set-up-metamask">Add Fantom Opera network</a> to your metamask
+        and switch to it.
+        Once your metamask is up withdrawl your exchange FTMs into your MetaMask wallet. To do that click on your FTM
+        balance, click withdraw, choose the Fantom Opera (FTM) network and input your metamask wallet address. You are
+        now good to go and use any service in the Fantom Opera network with your metamask!
+      </p>
+    </section>
+    <section class="guideMain_section">
       <h3>BUYING FTM</h3>
-      <ol>
-        <LI> If you have no other cryptos yet create and account at an exchange, for buying FTM we recommend Binance.
-        </LI>
-        <LI>After creating an account at an exchange, deposit FIAT money (that`s crypto lingo for paper money) into your
-          exchange balance.</LI>
-        <LI>Once you have deposited funds you can either purchase FTM directly from a market or use the binance
-          automatic converter.</LI>
-      </ol>
-    </DIV>
-  </section>
-    <aside>
-    <a href="https://gist.github.com/MarcoWorms/78e71064e3a5c366b29b8a9ce01e1f19" class="credits">   CREDITS TO MarcoWorms</a>
-    </aside>
-    </main>
-    <footer class="piepag">
-      <h5>© Todos los derechos reservados</h5>
-      <redes>
-          <a href="https://twitter.com">
-              <img src="/imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
-              <a href=https://discord.com/">
-                  <img src="/imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
-              </a>
-              <a href="https://https://nftkey.app/">
-                  <img src="/imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
-              </a>
-      </redes>
+      <p class="guideMain_section--texto">If you have no other cryptos yet create and account at an exchange, for buying
+        FTM we recommend Binance.
+
+        After creating an account at an exchange, deposit FIAT money (that`s crypto lingo for paper money) into your
+        exchange balance.
+        Once you have deposited funds you can either purchase FTM directly from a market or use the binance
+        automatic converter.
+      </p>
+    </section>
+    <p class="guideMain_creds">
+      <a href="https://gist.github.com/MarcoWorms/78e71064e3a5c366b29b8a9ce01e1f19" class="credits"> CREDITS TO
+        MarcoWorms</a>
+    </p>
+    <faq class="guideMain_section">
+      <h3>FAQ</h3>
+      <div>
+        <h4>Cuanto costara el mint?</h4>
+        <p>Cada token costara 10ftm</p>
+
+        <h4>Cuando sera el mint?</h4>
+        <p>Se anunciara la fecha por los canales oficiales</p>
+
+        <h4>Donde se podra hacer el mint?</h4>
+        <p>En la <a href="../index.html">pagina principal</a></p>
+        
+        <h4>Cuales son los canales oficiales?</h4>
+        <p> Los canales oficiales son <href="https://twitter.com">twitter</a> y <a href="https://discord.com">discord</a>  
+        </p>
+                </div>
+    </faq>
+  </main>
+  <footer class="piepag">
+    <h5>© Todos los derechos reservados</h5>
+    <redes>
+      <a href="https://twitter.com">
+        <img src="/imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
+        <a href=https://discord.com/">
+          <img src="/imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
+        </a>
+        <a href="https://https://nftkey.app/">
+          <img src="/imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
+        </a>
+    </redes>
   </footer>
 
 </html>
