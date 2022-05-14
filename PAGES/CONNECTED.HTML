@@ -5,34 +5,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAGINA MINT-STANDAR - WalletConectada</title>
-    
-     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <title>PAGINA MINT-STANDAR - Inicio</title>
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="../STYLES/bootstrap.css">
 
-     <link rel="stylesheet" href="../STYLES/styles.css">
+    <link rel="stylesheet" href="../STYLES/redifinigboot.css">
+    <link rel="stylesheet" href="../STYLES/styles.css">
 </head>
+
 
 <body class="cuerpo">
     <header class="encabezado">
-        <img class="logo" src="../imagenes/Logo_placeholder.jpg" alt="logo" />
+        <a href="../index.html" class="logo"><img src="../imagenes/Logo_placeholder.jpg" alt="logo" class="logo__img"
+                width="200px" height="200px" /></a>
         <ul class="nav" id="lateral">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="GUIDE.HTML">GUIDE</a></li>
-            <li><a href="MYNFTS.HTML">MY NFTs</a></li>
-            <li><a href="TEAM.HTML">TEAM</a></li>
+            <li><a href="./GUIDE.HTML">GUIDE</a></li>
+            <li><a href="./MYNFTS.HTML">MY NFTs</a></li>
+            <li><a href="./TEAM.HTML">TEAM</a></li>
             <li class="nav__item--close">
                 <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
             </li>
         </ul>
-        <a href="CONNECTED.HTML" class="wallet">
-            <button class="button-28" role="button">0x21..6584</button>
+        <a href="./CONNECTED.HTML" class="wallet">
+            <button class="button-28" role="button">CONNECT WALLET</button>
         </a>
-
         <a href="#lateral" class="header__open">
             <span class="jam jam-menu" data-jam="menu" data-fill="#222"></span>
         </a>
-
-
     </header>
     <main class="mainSection">
         <section class="mainGrid--connected">
@@ -89,18 +88,21 @@
         </section>
     </main>
 </body>
-<footer class="piepag">
+<footer class="piepag container">
     <h5>© Todos los derechos reservados</h5>
     <redes>
-        <a href="https://twitter.com">
-          <img src="./imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
-          <a href=https://discord.com/">
-            <img src="./imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
-          </a>
-          <a href="https://https://nftkey.app/">
-            <img src="./imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
-          </a>
-      </redes>
-</footer>
+      <a href="https://twitter.com">
+        <img src="../imagenes/twitter-logo-svg-vector.svg" alt="TWITTER" width="50PX" height="50PX" />
+        <a href=https://discord.com/">
+          <img src="../imagenes/svgDISCORD_LOGO.svg" alt="DISCORD" width="50PX" height="50PX" />
+        </a>
+        <a href="https://https://nftkey.app/">
+          <img src="../imagenes/nftkey_LOGO.png" alt="nftkey_LOGO" width="50PX" height="50PX" />
+        </a>
+    </redes>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>
