@@ -1,0 +1,111 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+}
+
+.mainGrid {
+  width: 100%;
+  max-width: 1650px;
+  padding: 5rem 0;
+  display: grid;
+  /*background-color: black;*/
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(4, max-content);
+  grid-template-areas:
+    "infoProducto__titulo infoProducto__titulo muestraNft"
+    "infoProducto__desc infoProducto__desc muestraNft"
+    "infoProducto__desc infoProducto__desc muestraNft"
+    "supply price muestraNft";
+}
+
+.infoProducto__titulo {
+  grid-area: infoProducto__titulo;
+  text-align: center;
+}
+
+.infoProducto__desc {
+  grid-area: infoProducto__desc;
+  padding: 1rem;
+}
+
+.infoProducto__desc--connected {
+  display: none;
+}
+
+.infoProducto {
+  grid-area: infoProducto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  height: 100%;
+  text-shadow: 3px 2px 2px rgba(209, 240, 177, 1);
+}
+
+.infoProducto h2 {
+  text-align: center;
+}
+
+.infoProducto p {
+  text-align: justify;
+}
+
+.supply {
+  grid-area: supply;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(209, 240, 177, 1);
+}
+
+.muestraNft {
+  grid-area: muestraNft;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  /*border:solid 5px rgba(209, 240, 177,1);;*/
+}
+
+.muestraNft img {
+  width: 45%;
+  height: max-content;
+  border-radius: 5px;
+}
+
+.container--wl {
+  padding: 1rem 0.5rem;
+  position: fixed;
+  background-color: rgba(209, 240, 177, 0.8);
+  top: 200px;
+  border-radius: 50px;
+  border: solid 5px var(--bs-oliva-hl);
+  transform: scale(0);
+  animation: appear 0.3s ease-in 1.5s forwards;
+
+}
+
+@keyframes appear {
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.btn-close--WL {
+  text-align: end;
+  font-size: 15px;
+
+}
+
+.btn-close {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.price {
+  grid-area: price;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(209, 240, 177, 1);
+
+}

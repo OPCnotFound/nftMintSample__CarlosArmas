@@ -1,0 +1,101 @@
+
+.mainGrid_myNfts {
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: repeat(2, fr);
+    grid-template-columns: repeat(4, fr);
+    grid-template-areas:
+      "NFT1 NFT2 NFT3 rareza "
+      "NFT4 NFT5 NFT6 . ";
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mainGrid_myNfts div {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mainGrid_myNfts div img {
+    padding: 0;
+    width: 90%;
+  }
+  
+  .NFT--1 {
+    grid-area: NFT1;
+  }
+  
+  .NFT--2 {
+    grid-area: NFT2;
+  }
+  
+  .NFT--3 {
+    grid-area: NFT3;
+  }
+  
+  .NFT--4 {
+    grid-area: NFT4;
+  }
+  
+  .NFT--5 {
+    grid-area: NFT5;
+  }
+  
+  .NFT--6 {
+    grid-area: NFT6;
+  }
+  
+  .rareza {
+    grid-area: rareza;
+  }
+  
+  .button--ordenar {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bolder;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    max-width: 10.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 20px;
+  }
+  
+  .button--ordenar:before,
+  .button--ordenar:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+  }
+  
+  .button--ordenar:before {
+    top: -25%;
+    left: 20%;
+  }
+  
+  .button--ordenar:after {
+    bottom: -25%;
+    right: 20%;
+  }
+  
+  .button--ordenar:hover:before,
+  .button--ordenar:hover:after {
+    transform: none;
+  }

@@ -1,0 +1,133 @@
+@media screen and (max-width: 1201px) {
+  p {
+    font-weight: unset;
+    font-size: 22px;
+  }
+
+  .button-28 {
+    width: min-content;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .encabezado {
+    height: fit-content;
+  }
+
+  /*.nav {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 35%;
+    }*/
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+
+  .nav li {
+    height: fit-content;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .nav a {
+    font-size: 25px;
+  }
+
+  .mainGrid {
+    position: relative;
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+      "infoProducto__titulo infoProducto__titulo"
+      "muestraNft muestraNft"
+      "supply price"
+      "infoProducto__desc infoProducto__desc";
+  }
+
+  .infoProducto {
+    padding: 0;
+  }
+
+  .muestraNft {
+    gap: 5px;
+  }
+
+  .muestraNft img {
+    width: 35%;
+    height: fit-content;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .infoProducto__desc {
+    font-size: 18px;
+    width: 85%;
+    justify-self: center;
+  }
+
+  .mainTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamProfile {
+    width: 100%;
+    max-width: 975px;
+  }
+
+  .guideMain_creds {
+    font-size: 22px;
+  }
+
+  .progress {
+    height: 40px;
+  }
+
+  .button {
+    font-size: 35px;
+  }
+
+  .mainGrid_myNfts {
+    width: 100vw;
+    padding: none;
+    grid-template-rows: max-content 1fr 1fr;
+    grid-template-columns: repeat(3, fr);
+    grid-template-areas:
+      "rareza rareza rareza"
+      "NFT1 NFT2 NFT3"
+      "NFT4 NFT5 NFT6";
+  }
+
+  .mainGrid_myNfts div {
+    padding: 1rem;
+  }
+
+  .rareza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button--ordenar {
+    font-size: 20px;
+    align-self: center;
+  }
+}
