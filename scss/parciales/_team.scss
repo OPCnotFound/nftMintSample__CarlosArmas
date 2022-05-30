@@ -1,71 +1,28 @@
 .mainTeam {
-    display: grid;
-    width: 100%;
-    row-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "integrante1 integrante2"
-      "integrante3 .";
-  }
-  
-  .mainTeam__integrante1 {
-    grid-area: integrante1;
-  }
-  
-  .mainTeam__integrante2 {
-    grid-area: integrante2;
-  }
-  
-  .mainTeam__integrante3 {
-    grid-area: integrante3;
-  }
-  
-  .teamProfile {
-    width: 580px;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: max-content max-content max-content;
-    grid-template-areas:
-      ". role"
-      "desc PP"
-      "redes name";
-  }
-  
-  .teamProfile__role {
-    grid-area: role;
-    justify-self: end;
-  }
-  
-  .teamProfile__PP {
-    grid-area: PP;
-    height: fit-content;
-    justify-self: center;
-    align-self: center;
-    padding: 5px;
-    border-radius: 50%;
-  }
-  
-  .teamProfile__name {
-    grid-area: name;
-    text-align: center;
-  }
-  
-  .teamProfile__desc {
-    grid-area: desc;
-    padding: 1.5rem;
-  }
-  
-  .teamProfile__redes {
-    grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+    
+&__titulo{
+    padding: 0.5rem 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    text-align: center;
   }
-  
-  .teamProfile__redes img {
-    height: 35px;
-    padding: 15px;
-    background-color: white;
-  }
+
+&__section{
+  padding: 0.25rem 0;
+  display: flex;
+  justify-content: center;
+}
+}
+
+@import "_teamCard.scss";
+
+
+.discord_buttom--teamCard {
+  @extend .discord_buttom;
+  padding: 0.5rem;
+  font-size: 25px;
+}
+

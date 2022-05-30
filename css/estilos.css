@@ -50,6 +50,11 @@ p {
 }
 
 /* ----- */
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
 .cuerpo {
   display: flex;
   flex-direction: column;
@@ -64,7 +69,7 @@ p {
 
 .encabezado {
   background-color: var(--bs-oliva);
-  height: 200px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -76,14 +81,36 @@ p {
 }
 
 .logo {
-  height: 100%;
+  height: 100px;
+  width: 100px;
+  background-image: url(../imagenes/Logo_placeholder2.jpg);
+  background-color: white;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .logo__img {
-  width: 100%;
-  height: 100%;
-  padding: 0 1rem;
-  border-radius: 25%;
+  height: 300px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 469px) {
+  .logo {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .logo {
+    height: 275px;
+    width: 275px;
+    background-image: url(../imagenes/Logo_placeholder.jpg);
+    background-size: 115%;
+    background-position: bottom;
+  }
 }
 
 .nav {
@@ -185,10 +212,20 @@ p {
   height: min-content;
 }
 
-.piepag img {
+.redes img {
   height: 35px;
   background-color: white;
   border-radius: 50%;
+}
+
+.discord_buttom, .discord_buttom--teamCard {
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: white;
+  background-color: #404eed;
+  text-shadow: none;
+  font-size: 15px;
 }
 
 /* ----- */
@@ -208,6 +245,16 @@ p {
   grid-template-areas: "infoProducto__titulo infoProducto__titulo muestraNft" "infoProducto__desc infoProducto__desc muestraNft" "infoProducto__desc infoProducto__desc muestraNft" "supply price muestraNft";
 }
 
+.infoProducto {
+  grid-area: infoProducto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  height: 100%;
+  text-shadow: 3px 2px 2px #d1f0b1;
+}
+
 .infoProducto__titulo {
   grid-area: infoProducto__titulo;
   text-align: center;
@@ -220,16 +267,6 @@ p {
 
 .infoProducto__desc--connected {
   display: none;
-}
-
-.infoProducto {
-  grid-area: infoProducto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  height: 100%;
-  text-shadow: 3px 2px 2px #d1f0b1;
 }
 
 .infoProducto h2 {
@@ -279,15 +316,15 @@ p {
   }
 }
 
-.btn-close--WL {
-  text-align: end;
-  font-size: 15px;
-}
-
 .btn-close {
   padding: 0.5rem;
   background-color: white;
   border-radius: 50%;
+}
+
+.btn-close--WL {
+  text-align: end;
+  font-size: 15px;
 }
 
 .price {
@@ -297,6 +334,12 @@ p {
 }
 
 /* ----- */
+:root {
+  --bg: white;
+  --color: rgba(139, 129, 85, 1);
+  --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .mainGrid--connected {
   width: 100%;
   display: grid;
@@ -319,6 +362,10 @@ p {
   flex-direction: column;
 }
 
+.barra h4 {
+  padding: 1rem;
+}
+
 .progress {
   background: rgba(255, 255, 255, 0.1);
   justify-self: center;
@@ -330,10 +377,6 @@ p {
   height: 60px;
   width: 80%;
   border: solid 5px #2f2f2f;
-}
-
-.barra h4 {
-  padding: 1rem;
 }
 
 .progress-value {
@@ -355,21 +398,11 @@ p {
 }
 
 /* /BARRA */
-/* MINT BUTTOM /
-rgba(139, 129, 85,1) PRIMARIO
-    rgba(209, 240, 177,1) SECUNDARIO
-    rgba(47, 47, 47,1) HIHGLIGHTS*/
-mint {
+.mint {
   grid-area: mint-buttom;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
-
-:root {
-  --bg: white;
-  --color: rgba(139, 129, 85, 1);
-  --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .wrapper {
@@ -393,8 +426,7 @@ mint {
   font-size: 50px;
 }
 
-.button:before,
-.button:after {
+.button:before, .button:after {
   width: 4.4em;
   height: 2.95em;
   position: absolute;
@@ -405,21 +437,22 @@ mint {
   transition: transform 1s ease;
   transform: scale(0);
   z-index: -1;
+  text-decoration: none;
 }
 
 .button:before {
   top: -25%;
-  left: 20%;
+  left: 35%;
 }
 
 .button:after {
   bottom: -25%;
-  right: 20%;
+  right: 35%;
 }
 
-.button:hover:before,
-.button:hover:after {
+.button:hover:before, .button:hover:after {
   transform: none;
+  color: white;
 }
 
 /* ----- */
@@ -448,28 +481,12 @@ mint {
   font-size: 30px;
 }
 
-.faqAccordion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: unset;
-}
-
 .accordion-button {
   font-size: 30px;
   text-shadow: 5px 5px 5px #d1f0b1;
   padding: 2rem 0.5rem;
   background-color: rgba(255, 255, 255, 0.5);
   color: var(--bs-oliva-hl);
-}
-
-.accordion-collapse p {
-  font-size: 25px;
-}
-
-.faqAccordion__Item {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 720px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -479,7 +496,19 @@ mint {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 
+.accordion-collapse p {
+  font-size: 25px;
+}
+
+.faqAccordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: unset;
+}
+
 .faqAccordion__Item {
+  background-color: rgba(255, 255, 255, 0.5);
   width: 85vw;
 }
 
@@ -490,11 +519,6 @@ mint {
   grid-template-rows: repeat(2, fr);
   grid-template-columns: repeat(4, fr);
   grid-template-areas: "NFT1 NFT2 NFT3 rareza " "NFT4 NFT5 NFT6 . ";
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 .mainGrid_myNfts div {
@@ -510,28 +534,44 @@ mint {
   width: 90%;
 }
 
-.NFT--1 {
-  grid-area: NFT1;
+.NFT--integrante1 {
+  grid-area: integrante1;
 }
 
-.NFT--2 {
-  grid-area: NFT2;
+.NFT--integrante2 {
+  grid-area: integrante2;
 }
 
-.NFT--3 {
-  grid-area: NFT3;
+.NFT--integrante3 {
+  grid-area: integrante3;
 }
 
-.NFT--4 {
-  grid-area: NFT4;
+.NFT--integrante4 {
+  grid-area: integrante4;
 }
 
-.NFT--5 {
-  grid-area: NFT5;
+.NFT--integrante5 {
+  grid-area: integrante5;
 }
 
-.NFT--6 {
-  grid-area: NFT6;
+.NFT--integrante6 {
+  grid-area: integrante6;
+}
+
+.NFT--integrante7 {
+  grid-area: integrante7;
+}
+
+.NFT--integrante8 {
+  grid-area: integrante8;
+}
+
+.NFT--integrante9 {
+  grid-area: integrante9;
+}
+
+.NFT--integrante10 {
+  grid-area: integrante10;
 }
 
 .rareza {
@@ -554,8 +594,7 @@ mint {
   font-size: 20px;
 }
 
-.button--ordenar:before,
-.button--ordenar:after {
+.button--ordenar:before, .button--ordenar:after {
   width: 4.4em;
   height: 2.95em;
   position: absolute;
@@ -578,77 +617,130 @@ mint {
   right: 20%;
 }
 
-.button--ordenar:hover:before,
-.button--ordenar:hover:after {
+.button--ordenar:hover:before, .button--ordenar:hover:after {
   transform: none;
 }
 
 /* ----- */
 .mainTeam {
-  display: grid;
-  width: 100%;
-  row-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "integrante1 integrante2" "integrante3 .";
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
 }
 
-.mainTeam__integrante1 {
-  grid-area: integrante1;
-}
-
-.mainTeam__integrante2 {
-  grid-area: integrante2;
-}
-
-.mainTeam__integrante3 {
-  grid-area: integrante3;
-}
-
-.teamProfile {
-  width: 580px;
-  justify-self: center;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: max-content max-content max-content;
-  grid-template-areas: ". role" "desc PP" "redes name";
-}
-
-.teamProfile__role {
-  grid-area: role;
-  justify-self: end;
-}
-
-.teamProfile__PP {
-  grid-area: PP;
-  height: fit-content;
-  justify-self: center;
-  align-self: center;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.teamProfile__name {
-  grid-area: name;
+.mainTeam__titulo {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.teamProfile__desc {
-  grid-area: desc;
-  padding: 1.5rem;
-}
-
-.teamProfile__redes {
-  grid-area: redes;
+.mainTeam__section {
+  padding: 0.25rem 0;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 
-.teamProfile__redes img {
-  height: 35px;
-  padding: 15px;
-  background-color: white;
+.teamCard {
+  position: relative;
+  height: 375px;
+  width: 250px;
+  color: white;
+  text-shadow: 0 0 2px var(--bs-oliva-hl);
+  background: url(../imagenes/PP_placeholder.jpg) center no-repeat;
+  background-size: contain;
+  background-size: 115%;
+  background-position: top;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.teamCard__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--bs-oliva);
+  border-top-left-radius: px;
+  transform: translateY(10px);
+  transition: transform 5.25s ease-in-out;
+}
+
+.teamCard__content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px var(--bs-oliva);
+}
+
+.teamCard__title {
+  color: var(--bs-oliva-seconday);
+  line-height: 25px;
+}
+
+.teamCard__subtitle {
+  display: block;
+  font-size: 25px;
+}
+
+.teamCard__description {
+  display: none;
+  font-size: 18px;
+  opacity: 0;
+  transform: opacity 5s;
+  transition: linear 5s ease-in-out;
+}
+
+.teamCard:hover .teamCard__content {
+  transform: translateY(0) 5s;
+}
+
+.teamCard:hover .teamCard__description {
+  display: block;
+  opacity: 1;
+  transition-delay: 5s;
+}
+
+@media screen and (min-width: 769px) {
+  .teamCard {
+    height: 495px;
+    width: 330px;
+    background-size: cover;
+  }
+  .teamCard__title {
+    color: var(--bs-oliva-seconday);
+    line-height: 45px;
+  }
+  .teamCard__subtitle {
+    display: block;
+    font-size: 30px;
+  }
+  .teamCard__description {
+    display: none;
+    font-size: 25px;
+    opacity: 0;
+    transform: opacity 5s;
+    transition: linear 5s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .teamCard {
+    height: 675px;
+    width: 450px;
+  }
+}
+
+.discord_buttom--teamCard {
+  padding: 0.5rem;
+  font-size: 25px;
 }
 
 /* ----- */
@@ -760,10 +852,6 @@ mint {
 @media screen and (max-width: 769px) {
   h2 {
     font-size: 40px;
-  }
-  .logo {
-    height: 85%;
-    border-radius: 10px;
   }
   .button-28 {
     width: min-content;

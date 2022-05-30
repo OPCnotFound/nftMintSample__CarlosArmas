@@ -1,59 +1,61 @@
 .guideMain {
-    padding: 1rem;
-  }
-  
-  .guideMain_section {
+  padding: 1rem;
+
+  &_section {
     display: flex;
     flex-direction: column;
+
+    h3 {
+      padding: 1rem;
+    }
+
+    &--texto {
+      align-self: center;
+      max-width: 1200px;
+      padding: 1rem;
+    }
   }
-  
-  .guideMain_section h3 {
-    padding: 1rem;
-  }
-  
-  .guideMain_section--texto {
-    align-self: center;
-    max-width: 1200px;
-    padding: 1rem;
-  }
-  
-  .guideMain_creds {
+
+  &_creds {
     text-align: end;
     padding: 2rem;
     font-size: 30px;
   }
-  
-  .faqAccordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: unset;
-  }
-  
-  .accordion-button {
-    font-size: 30px;
-    text-shadow: 5px 5px 5px rgba(209, 240, 177, 1);
-    padding: 2rem 0.5rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: var(--bs-oliva-hl);
-  }
-  
-  .accordion-collapse p {
-    font-size: 25px;
-  }
-  
-  .faqAccordion__Item {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 720px;
-  }
-  
-  .accordion-button:not(.collapsed) {
+}
+
+
+.accordion-button {
+  font-size: 30px;
+  text-shadow: 5px 5px 5px rgba(209, 240, 177, 1);
+  padding: 2rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--bs-oliva-hl);
+
+  &:not(.collapsed) {
     color: white;
     text-shadow: 0 0 10px var(--bs-oliva-hl);
     background-color: var(--bs-oliva-seconday);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
   }
   
-.faqAccordion__Item {
-    width: 85vw;
-  }
+}
+
+.accordion-collapse p {
+  font-size: 25px;
+}
+
+
+.faqAccordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: unset;
+
+
+&__Item {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 85vw;
+}
+
+}
+

@@ -18,19 +18,6 @@
     "supply price muestraNft";
 }
 
-.infoProducto__titulo {
-  grid-area: infoProducto__titulo;
-  text-align: center;
-}
-
-.infoProducto__desc {
-  grid-area: infoProducto__desc;
-  padding: 1rem;
-}
-
-.infoProducto__desc--connected {
-  display: none;
-}
 
 .infoProducto {
   grid-area: infoProducto;
@@ -40,14 +27,26 @@
   padding: 2rem;
   height: 100%;
   text-shadow: 3px 2px 2px rgba(209, 240, 177, 1);
-}
 
-.infoProducto h2 {
+&__titulo {
+  grid-area: infoProducto__titulo;
   text-align: center;
 }
 
-.infoProducto p {
+&__desc {
+  grid-area: infoProducto__desc;
+  padding: 1rem;
+
+  &--connected {
+  display: none;
+}
+}
+ h2 {
+  text-align: center;
+}
+p {
   text-align: justify;
+}
 }
 
 .supply {
@@ -64,12 +63,13 @@
   gap: 1.5rem;
   padding: 1rem;
   /*border:solid 5px rgba(209, 240, 177,1);;*/
-}
 
-.muestraNft img {
+
+img {
   width: 45%;
   height: max-content;
   border-radius: 5px;
+}
 }
 
 .container--wl {
@@ -91,16 +91,18 @@
   }
 }
 
-.btn-close--WL {
-  text-align: end;
-  font-size: 15px;
 
-}
 
 .btn-close {
   padding: 0.5rem;
   background-color: white;
   border-radius: 50%;
+
+  &--WL {
+    text-align: end;
+    font-size: 15px;
+  
+  }
 }
 
 .price {

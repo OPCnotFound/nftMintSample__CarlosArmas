@@ -1,0 +1,98 @@
+.teamCard {
+  position: relative;
+  @include sizes(250px);
+  color: white;
+  text-shadow: 0 0 2px var(--bs-oliva-hl);
+  background: url(../imagenes/PP_placeholder.jpg) center no-repeat;
+  background-size: contain;
+  background-size: 115%;
+  background-position: top;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 1rem;
+
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bs-oliva);
+    border-top-left-radius: px;
+    transform: translateY(10px);
+    transition: transform 5.25s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -47px;
+      right: -45px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(-175deg);
+      border-radius: 50%;
+      box-shadow: inset 48px 48px var(--bs-oliva);
+    }
+  }
+
+  &__title {
+    color: var(--bs-oliva-seconday);
+    line-height: 25px;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 25px;
+  }
+
+  &__description {
+    display: none;
+    font-size: 18px;
+    opacity: 0;
+    transform: opacity 5s;
+    transition: linear 5s ease-in-out;
+  }
+
+  &:hover &__content {
+    transform: translateY(0) 5s;
+  }
+
+  &:hover &__description {
+    display: block;
+    opacity: 1;
+    transition-delay: 5s;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .teamCard {
+    @include sizes(330px);
+    background-size: cover;
+    
+    &__title {
+      color: var(--bs-oliva-seconday);
+      line-height: 45px;
+    }
+
+    &__subtitle {
+      display: block;
+      font-size: 30px;
+    }
+
+    &__description {
+      display: none;
+      font-size: 25px;
+      opacity: 0;
+      transform: opacity 5s;
+      transition: linear 5s ease-in-out;
+    }
+  }
+}
+
+@media screen and (min-width: 1199px) {
+
+    .teamCard {
+        @include sizes(450px);}
+
+
+}
